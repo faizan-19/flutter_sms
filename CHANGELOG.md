@@ -1,3 +1,8 @@
+# 2.3.5
+
+* Removed deprecated V1 embedding support to fix Kotlin compilation errors completely.
+* Plugin now uses only V2 embedding which is the standard for modern Flutter versions.
+
 # 2.3.4
 
 * Fixed Kotlin compilation errors related to unresolved references for 'Registrar', 'activity', and 'messenger' in Android plugin implementation.
