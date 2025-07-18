@@ -18,7 +18,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
-import io.flutter.plugin.common.PluginRegistry.Registrar
+import io.flutter.plugin.common.PluginRegistry
 
 
 class FlutterSmsPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
@@ -63,7 +63,7 @@ class FlutterSmsPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   // release but we leave it here in case someone's app does not utilize the V2 embedding yet.
   companion object {
     @JvmStatic
-    fun registerWith(registrar: Registrar) {
+    fun registerWith(registrar: PluginRegistry.Registrar) {
       val inst = FlutterSmsPlugin()
       inst.activity = registrar.activity()
       inst.setupCallbackChannels(registrar.messenger())
