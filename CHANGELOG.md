@@ -1,3 +1,7 @@
+# 2.3.4
+
+* Fixed Kotlin compilation errors related to unresolved references for 'Registrar', 'activity', and 'messenger' in Android plugin implementation.
+
 # 2.3.3
 
 * Adding ability to send SMS directly on Android (#57).
